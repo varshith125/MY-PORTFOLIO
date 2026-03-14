@@ -1,0 +1,14 @@
+{
+  "name": "varshith-portfolio",
+  "version": "1.0.0",
+  "description": "AI-powered developer portfolio for Venkata Varshith",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "cd backend && npm start",
+    "linkedin:sync": "cd backend && node scripts/linkedinScraper.js",
+    "build": "cd frontend && npm run build"
+  }
+}

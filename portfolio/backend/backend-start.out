@@ -1,0 +1,6 @@
+
+> varshith-portfolio-backend@1.0.0 start
+> node server.js
+
+MongoDB connected
+Varshith portfolio backend running on http://localhost:5010

@@ -1,0 +1,59 @@
+{
+  "name": "Gummadi Venkata Varshith",
+  "title": "Aspiring Software Engineer",
+  "contact": {
+    "phone": "+91-7993170792",
+    "email": "varshith6066@gmail.com",
+    "location": "Visakhapatnam, India",
+    "linkedin": "https://linkedin.com/in/venkata-varshith",
+    "github": "https://github.com/varshith125"
+  },
+  "summary": "Final-year Information Technology undergraduate focused on building clean, reliable software experiences. Experienced with web development, AI-powered applications, and collaborative project work, with strong problem solving and team collaboration skills.",
+  "education": [
+    {
+      "degree": "Bachelor of Technology (B.Tech) - Information Technology",
+      "institution": "Anil Neerukonda Institute of Technology and Sciences (ANITS)",
+      "location": "Visakhapatnam",
+      "year": "2022-2026",
+      "cgpa": "7.60"
+    }
+  ],
+  "skills": {
+    "dataTools": ["MS Excel", "MS Office", "SQL (Basic)"],
+    "programmingLanguages": ["Python", "C++", "JavaScript", "Java"],
+    "coreSkills": ["Problem Solving", "Team Collaboration"],
+    "web": ["HTML", "CSS", "Bootstrap"],
+    "frameworks": ["Django"],
+    "tools": ["Git", "GitHub", "VS Code"]
+  },
+  "experience": [
+    {
+      "role": "Front-End Developer Intern",
+      "company": "Cognify Technologies",
+      "description": "Engineered responsive web interfaces using HTML, CSS, JavaScript, and Bootstrap. Collaborated with team members to resolve interface issues and improve usability across browsers."
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI-Powered Chatbot System with Blockchain Security",
+      "description": "Developed an AI chatbot platform for educational and technical queries using Python and Django. Integrated APIs to provide context-based responses and automated user interactions. Implemented secure data handling mechanisms for storing user queries and responses.",
+      "tech": ["Python", "Django", "HTML", "CSS", "JavaScript", "SQLite"]
+    },
+    {
+      "name": "Short Circuit Detection System (IoT)",
+      "description": "Built an IoT-based system to detect abnormal electrical current using NodeMCU and sensors. Implemented threshold monitoring and automated relay control for electrical safety. Tested system performance under multiple electrical load conditions.",
+      "tech": ["C++", "IoT", "NodeMCU", "Current Sensor", "Relay Module"]
+    }
+  ],
+  "certifications": [
+    "APSSDC - Web Development using Django",
+    "edX - Introduction to HTML, CSS & JavaScript"
+  ],
+  "softSkills": [
+    "Problem Solving",
+    "Clear Communication",
+    "Team Collaboration",
+    "Adaptability"
+  ],
+  "lastUpdated": "2025-01-01T00:00:00.000Z"
+}
