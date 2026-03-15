@@ -71,7 +71,15 @@ async function getChatResponse(userMessage) {
       systemInstruction: systemPrompt,
     });
 
-    const result = await model.generateContent(userMessage);
+    const timeoutPromise = new Promise((_, reject) => {
+      setTimeout(() => reject(new Error("Gemini API timeout exceeded (10000ms)")), 10000);
+    });
+
+    const result = await Promise.race([
+      model.generateContent(userMessage),
+      timeoutPromise
+    ]);
+
     const response = result.response;
     return response.text();
   } catch (error) {

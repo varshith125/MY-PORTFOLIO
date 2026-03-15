@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Bot, MessageCircle, Send, X } from "lucide-react";
 import { analyticsAPI, chatAPI } from "../utils/api";
+import ChatErrorBoundary from "./ChatErrorBoundary";
 
 function createMessage(role, content) {
   return {
@@ -33,7 +34,7 @@ export default function FloatingChatWidget() {
   }, [messages, loading]);
 
   const sendMessage = async (rawText) => {
-    const text = rawText.trim();
+    const text = typeof rawText === "string" ? rawText.trim() : String(rawText ?? "").trim();
     if (!text || loading) return;
 
     setInput("");
@@ -60,6 +61,7 @@ export default function FloatingChatWidget() {
   };
 
   return (
+    <ChatErrorBoundary>
     <div className="floating-chat">
       <AnimatePresence>
         {open && (
@@ -124,5 +126,6 @@ export default function FloatingChatWidget() {
         <span>Chat</span>
       </button>
     </div>
+    </ChatErrorBoundary>
   );
 }

@@ -251,7 +251,7 @@ export default function ResumeSection() {
             <div className="hud-panel p-6">
               <p className="section-label mb-4">Key Skills</p>
               <div className="flex flex-wrap gap-2">
-                {skillHighlights.map((skill) => (
+                {skillHighlights?.map((skill) => (
                   <span key={skill} className="hud-tag">
                     {skill}
                   </span>

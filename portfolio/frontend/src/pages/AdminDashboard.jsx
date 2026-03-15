@@ -59,7 +59,7 @@ export default function AdminDashboard() {
               <BarChart3 size={18} />
               <span>Total Visitors</span>
             </div>
-            <p className="modern-stat-value">{stats.totalVisits}</p>
+            <p className="modern-stat-value">{stats?.totalVisits || 0}</p>
           </div>
 
           <div className="panel-card p-6">
@@ -67,7 +67,7 @@ export default function AdminDashboard() {
               <Github size={18} />
               <span>GitHub Clicks</span>
             </div>
-            <p className="modern-stat-value">{stats.metrics.githubClicks}</p>
+            <p className="modern-stat-value">{stats?.metrics?.githubClicks || 0}</p>
           </div>
 
           <div className="panel-card p-6">
@@ -75,7 +75,7 @@ export default function AdminDashboard() {
               <Linkedin size={18} />
               <span>LinkedIn Clicks</span>
             </div>
-            <p className="modern-stat-value">{stats.metrics.linkedinClicks}</p>
+            <p className="modern-stat-value">{stats?.metrics?.linkedinClicks || 0}</p>
           </div>
 
           <div className="panel-card p-6">
@@ -83,7 +83,7 @@ export default function AdminDashboard() {
               <Download size={18} />
               <span>Resume Downloads</span>
             </div>
-            <p className="modern-stat-value">{stats.metrics.resumeDownloads}</p>
+            <p className="modern-stat-value">{stats?.metrics?.resumeDownloads || 0}</p>
           </div>
 
           <div className="panel-card p-6">
@@ -91,7 +91,7 @@ export default function AdminDashboard() {
               <FolderGit2 size={18} />
               <span>Project Opens</span>
             </div>
-            <p className="modern-stat-value">{stats.metrics.projectOpens}</p>
+            <p className="modern-stat-value">{stats?.metrics?.projectOpens || 0}</p>
           </div>
 
           <div className="panel-card p-6">
@@ -99,7 +99,7 @@ export default function AdminDashboard() {
               <MessageSquare size={18} />
               <span>Chatbot Questions</span>
             </div>
-            <p className="modern-stat-value">{stats.metrics.chatbotMessages}</p>
+            <p className="modern-stat-value">{stats?.metrics?.chatbotMessages || 0}</p>
           </div>
         </div>
 
@@ -110,7 +110,7 @@ export default function AdminDashboard() {
               <span>Countries of Visitors</span>
             </div>
             <HorizontalBars
-              items={stats.countries}
+              items={stats?.countries || []}
               labelKey="country"
               valueKey="count"
               emptyText="No analytics data yet."
@@ -123,7 +123,7 @@ export default function AdminDashboard() {
               <span>Most Viewed Projects</span>
             </div>
             <HorizontalBars
-              items={stats.projects}
+              items={stats?.projects || []}
               labelKey="project"
               valueKey="count"
               emptyText="Project analytics will appear once visitors open project links."

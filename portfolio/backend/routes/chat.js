@@ -20,11 +20,18 @@ router.post("/", async (req, res) => {
     return res.json({ reply: response });
   } catch (error) {
     console.error("Chat route error:", error.message);
-    const fallbackReply = getFallbackResponse(message.trim());
+    
+    let finalFallbackReply = "Varshith is a talented software engineer. You can reach out to him via email or LinkedIn for more details.";
+    try {
+      finalFallbackReply = getFallbackResponse(message.trim());
+    } catch (fallbackError) {
+      console.error("Fallback generator error:", fallbackError.message);
+    }
+    
     return res.json({
-      reply: fallbackReply,
+      reply: finalFallbackReply,
       fallback: true,
-      warning: "Gemini quota unavailable. Responding from resume profile data.",
+      warning: "Gemini quota unavailable or timed out. Responding from resume profile data.",
     });
   }
 });

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { Send, Bot, User, Sparkles, RotateCcw } from "lucide-react";
 import { analyticsAPI, chatAPI } from "../utils/api";
+import ChatErrorBoundary from "./ChatErrorBoundary";
 
 const SUGGESTED = [
   "Who is Varshith?",
@@ -98,7 +99,7 @@ export default function Chatbot() {
   }, [messages, loading]);
 
   const sendMessage = async (text) => {
-    const msg = text.trim();
+    const msg = typeof text === "string" ? text.trim() : String(text ?? "").trim();
     if (!msg || loading) return;
 
     setInput("");
@@ -145,6 +146,7 @@ export default function Chatbot() {
   };
 
   return (
+    <ChatErrorBoundary>
     <section id="chatbot" className="py-24 relative bg-[#0d0d14]">
       <div className="max-w-6xl mx-auto px-6" ref={ref}>
         <motion.div
@@ -246,5 +248,6 @@ export default function Chatbot() {
         </motion.div>
       </div>
     </section>
+    </ChatErrorBoundary>
   );
 }
