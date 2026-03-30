@@ -4,6 +4,33 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Star, GitFork, ExternalLink, Github, RefreshCw } from "lucide-react";
 import { analyticsAPI, githubAPI } from "../utils/api";
+import axios from "axios";
+
+const GITHUB_USERNAME = "varshith125";
+
+// Direct GitHub API fallback (no backend needed)
+async function fetchReposDirectly() {
+  const response = await axios.get(
+    `https://api.github.com/users/${GITHUB_USERNAME}/repos`,
+    {
+      params: { sort: "updated", per_page: 20, type: "public" },
+      headers: { Accept: "application/vnd.github.v3+json" },
+    }
+  );
+  return response.data
+    .filter((repo) => !repo.fork)
+    .map((repo) => ({
+      id: repo.id,
+      name: repo.name,
+      description: repo.description || "No description provided",
+      stars: repo.stargazers_count,
+      forks: repo.forks_count,
+      language: repo.language,
+      url: repo.html_url,
+      topics: repo.topics || [],
+      updatedAt: repo.updated_at,
+    }));
+}
 
 const langColors = {
   Python: "#3572A5",
@@ -96,10 +123,17 @@ export default function GitHubSection() {
     setLoading(true);
     setError(null);
     try {
+      // Try backend API first
       const data = await githubAPI.getRepos();
       setRepos(data.repos || []);
     } catch (err) {
-      setError("Could not load GitHub repos. Check that the backend is running.");
+      // Fallback: call GitHub API directly from the browser
+      try {
+        const directRepos = await fetchReposDirectly();
+        setRepos(directRepos);
+      } catch (fallbackErr) {
+        setError("Could not load GitHub repos. Please try again later.");
+      }
     } finally {
       setLoading(false);
     }
