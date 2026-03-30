@@ -28,6 +28,8 @@ async function resolveCountry(ip) {
   }
 }
 
+const mongoose = require("mongoose");
+
 function parseDeviceType(userAgent) {
   const parser = new UAParser(userAgent);
   const deviceType = parser.getDevice().type;
@@ -51,6 +53,9 @@ async function recordVisit(req, payload = {}) {
   };
 
   try {
+    if (mongoose.connection.readyState !== 1) {
+      throw new Error("Mongoose not connected");
+    }
     await Visit.create(visit);
   } catch {
     fallbackStore.push(visit);
@@ -61,6 +66,9 @@ async function recordVisit(req, payload = {}) {
 
 async function getStats() {
   try {
+    if (mongoose.connection.readyState !== 1) {
+      throw new Error("Mongoose not connected");
+    }
     const [totalVisits, countries, projects, eventCounts] = await Promise.all([
       Visit.countDocuments(),
       Visit.aggregate([

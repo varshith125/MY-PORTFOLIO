@@ -49,9 +49,20 @@ app.use((err, req, res, next) => {
 
 async function startServer() {
   await connectDB();
-  app.listen(PORT, () => {
+  const server = app.listen(PORT, () => {
     console.log(`Varshith portfolio backend running on http://localhost:${PORT}`);
+  });
+
+  server.on("error", (err) => {
+    if (err.code === "EADDRINUSE") {
+      console.error(`\n❌ Port ${PORT} is already in use.`);
+      console.error(`   Stop the other process or change PORT in .env\n`);
+    } else {
+      console.error("Server error:", err.message);
+    }
+    process.exit(1);
   });
 }
 
 startServer();
+

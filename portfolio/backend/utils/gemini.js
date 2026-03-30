@@ -2,7 +2,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const fs = require("fs");
 const path = require("path");
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "mock_key");
 
 function loadProfile() {
   const profilePath = path.join(__dirname, "../data/profile.json");
@@ -67,7 +67,7 @@ async function getChatResponse(userMessage) {
     const systemPrompt = buildSystemPrompt(profile);
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash",
+      model: "gemini-1.5-flash",
       systemInstruction: systemPrompt,
     });
 
