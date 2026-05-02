@@ -5,7 +5,7 @@ import { analyticsAPI } from "../utils/api";
 
 const metrics = [
   { value: "2+", label: "Featured Projects" },
-  { value: "8+", label: "Core Technologies" },
+  { value: "10+", label: "Technologies" },
   { value: "2026", label: "Graduation Year" },
 ];
 
@@ -43,7 +43,7 @@ export default function Hero({ onLaunch3D }) {
               transition={{ duration: 0.65, delay: 0.12 }}
               className="modern-hero-subtitle"
             >
-              Aspiring Software Engineer
+              Frontend Developer
             </motion.h2>
 
             <motion.div
@@ -54,11 +54,11 @@ export default function Hero({ onLaunch3D }) {
             >
               <TypeAnimation
                 sequence={[
+                  "React Developer",
+                  1800,
                   "Full Stack Developer",
                   1800,
-                  "Java Developer",
-                  1800,
-                  "Python Developer",
+                  "JavaScript Engineer",
                   1800,
                 ]}
                 wrapper="span"

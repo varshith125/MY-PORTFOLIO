@@ -31,9 +31,9 @@ export default function About() {
           >
             <div className="space-y-4 mb-8">
               {[
-                "I'm a final-year Information Technology student at ANITS, Visakhapatnam — someone who believes code should solve real problems, not just pass tests.",
-                "My work spans AI chatbots, IoT safety systems, and full-stack web apps. I'm drawn to the intersection of hardware and software — making intelligent systems that interact with the physical world.",
-                "Beyond the keyboard, I'm interested in data-driven decision making and building tools that make teams more effective. I approach every problem with analytical rigor and creative curiosity.",
+                "I'm a final-year Information Technology student at ANITS, Visakhapatnam — a frontend-focused developer who loves building scalable, performant React applications.",
+                "My work spans AI-powered platforms, full-stack web apps, and blockchain-integrated systems. I bring strong JavaScript fundamentals and a product-minded approach to every project.",
+                "I'm passionate about performance optimization, clean code, and developer tooling — always looking for ways to make software faster, more reliable, and a pleasure to use.",
               ].map((text, i) => (
                 <motion.p
                   key={i}
@@ -98,16 +98,15 @@ export default function About() {
                   <Briefcase size={18} className="text-violet-400" />
                 </div>
                 <div>
-                  <p className="font-mono text-xs text-[#4a4a6a] mb-1">Internship</p>
+                  <p className="font-mono text-xs text-[#4a4a6a] mb-1">Nov 2025 – Apr 2026</p>
                   <h3 className="font-display font-semibold text-[#e8e8f0] mb-0.5">
-                    Front-End Developer
+                    Frontend Developer Intern
                   </h3>
                   <p className="font-body text-sm text-[#9090b0]">
-                    Cognify Technologies
+                    Bluphlux
                   </p>
                   <p className="font-body text-xs text-[#4a4a6a] mt-2 leading-relaxed">
-                    Engineered responsive interfaces using HTML, CSS, JavaScript, and Bootstrap.
-                    Resolved cross-browser usability issues collaboratively.
+                    Built 10+ responsive React components. Reduced code duplication by 25% with reusable patterns. Integrated REST APIs for real-time data rendering.
                   </p>
                 </div>
               </div>

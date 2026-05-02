@@ -1,32 +1,35 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ArrowUpRight, Bot, Zap } from "lucide-react";
+import { ArrowUpRight, Cpu, BarChart2 } from "lucide-react";
 import { analyticsAPI } from "../utils/api";
 
 const projects = [
   {
     id: 1,
-    name: "AI Chatbot with Blockchain Security",
+    name: "CryptoPrompt",
+    tagline: "AI Prompt Management Platform",
     description:
-      "A full-stack chatbot platform for educational and technical questions with secure storage, contextual answers, and a clean multi-service architecture.",
-    tech: ["Python", "Django", "JavaScript", "SQLite", "REST APIs"],
+      "Full-stack AI platform using Gemini API to enhance prompt generation and user workflows. Hybrid Web2 + Web3 architecture (SQLite + Ethereum) with AES-256 encryption and JWT authentication.",
+    tech: ["React", "Django REST", "Ethereum", "Gemini API", "Solidity", "web3.py"],
     image:
       "linear-gradient(135deg, rgba(59,130,246,0.42), rgba(99,102,241,0.15)), radial-gradient(circle at 20% 20%, rgba(255,255,255,0.32), transparent 35%), #0f172a",
-    icon: Bot,
+    icon: Cpu,
     github: "https://github.com/varshith125",
   },
   {
     id: 2,
-    name: "Short Circuit Detection System",
+    name: "FinTrack",
+    tagline: "Personal Finance Dashboard",
     description:
-      "An IoT safety platform that monitors electrical current and automates relay control to reduce risk and improve response reliability.",
-    tech: ["C++", "NodeMCU", "IoT", "Current Sensor", "Relay Module"],
+      "Dashboard handling 500+ records with optimized filtering achieving sub-100ms response time. Global state management with Zustand, interactive Recharts visualizations, and responsive dark/light mode.",
+    tech: ["React", "TypeScript", "Zustand", "Recharts"],
     image:
       "linear-gradient(135deg, rgba(14,165,233,0.38), rgba(30,41,59,0.2)), radial-gradient(circle at 78% 24%, rgba(255,255,255,0.24), transparent 28%), #0f172a",
-    icon: Zap,
+    icon: BarChart2,
     github: "https://github.com/varshith125",
   },
 ];
+
 
 function ProjectCard({ project, index, inView }) {
   const Icon = project.icon;
@@ -53,6 +56,9 @@ function ProjectCard({ project, index, inView }) {
         <div className="flex items-start justify-between gap-4 mb-4">
           <div>
             <h3 className="font-display text-2xl text-slate-100">{project.name}</h3>
+            {project.tagline && (
+              <p className="font-mono text-xs text-cyan-400 mt-1">{project.tagline}</p>
+            )}
             <p className="modern-project-copy mt-3">{project.description}</p>
           </div>
           <a

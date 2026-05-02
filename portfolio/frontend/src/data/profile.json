@@ -1,6 +1,6 @@
 {
   "name": "Gummadi Venkata Varshith",
-  "title": "Aspiring Software Engineer",
+  "title": "Frontend Developer",
   "contact": {
     "phone": "+91-7993170792",
     "email": "varshith6066@gmail.com",
@@ -8,52 +8,55 @@
     "linkedin": "https://linkedin.com/in/venkata-varshith",
     "github": "https://github.com/varshith125"
   },
-  "summary": "Final-year Information Technology undergraduate focused on building clean, reliable software experiences. Experienced with web development, AI-powered applications, and collaborative project work, with strong problem solving and team collaboration skills.",
+  "summary": "Frontend-focused developer with hands-on experience in building scalable React and full-stack web applications. Strong in JavaScript, REST APIs, and performance optimization, with a solid foundation in data structures and problem-solving. Seeking an entry-level software engineering role.",
   "education": [
     {
-      "degree": "Bachelor of Technology (B.Tech) - Information Technology",
-      "institution": "Anil Neerukonda Institute of Technology and Sciences (ANITS)",
+      "degree": "B.Tech — Information Technology",
+      "institution": "Anil Neerukonda Institute of Technology & Sciences (ANITS)",
       "location": "Visakhapatnam",
       "year": "2022-2026",
       "cgpa": "7.60"
     }
   ],
   "skills": {
-    "dataTools": ["MS Excel", "MS Office", "SQL (Basic)"],
-    "programmingLanguages": ["Python", "C++", "JavaScript", "Java"],
-    "coreSkills": ["Problem Solving", "Team Collaboration"],
-    "web": ["HTML", "CSS", "Bootstrap"],
-    "frameworks": ["Django"],
-    "tools": ["Git", "GitHub", "VS Code"]
+    "programmingLanguages": ["JavaScript", "TypeScript", "Java", "Python"],
+    "web": ["React.js", "HTML", "CSS", "Tailwind CSS"],
+    "frameworks": ["Django", "REST APIs", "JWT Authentication", "Zustand", "Recharts"],
+    "tools": ["Git", "GitHub", "Vercel", "Render", "VS Code"],
+    "dataTools": ["MySQL", "MongoDB", "SQLite"],
+    "coreSkills": ["Problem Solving", "Performance Optimization", "Data Structures"]
   },
   "experience": [
     {
-      "role": "Front-End Developer Intern",
-      "company": "Cognify Technologies",
-      "description": "Engineered responsive web interfaces using HTML, CSS, JavaScript, and Bootstrap. Collaborated with team members to resolve interface issues and improve usability across browsers."
+      "role": "Frontend Developer Intern",
+      "company": "Bluphlux",
+      "duration": "Nov 2025 – Apr 2026",
+      "description": "Developed 10+ responsive React components, improving UI consistency across 5+ application modules. Implemented dynamic features using hooks, enhancing state management and reducing re-render issues. Designed reusable components, reducing code duplication by 25%. Integrated REST APIs to render real-time data, improving application responsiveness."
     }
   ],
   "projects": [
     {
-      "name": "AI-Powered Chatbot System with Blockchain Security",
-      "description": "Developed an AI chatbot platform for educational and technical queries using Python and Django. Integrated APIs to provide context-based responses and automated user interactions. Implemented secure data handling mechanisms for storing user queries and responses.",
-      "tech": ["Python", "Django", "HTML", "CSS", "JavaScript", "SQLite"]
+      "name": "CryptoPrompt — AI Prompt Management Platform",
+      "description": "Full-stack AI platform using Gemini API for prompt generation. Hybrid Web2 + Web3 architecture with AES-256 encryption and JWT authentication. Deployed on Vercel and Render.",
+      "tech": ["React", "Django REST", "Ethereum", "Gemini API", "Solidity", "web3.py"]
     },
     {
-      "name": "Short Circuit Detection System (IoT)",
-      "description": "Built an IoT-based system to detect abnormal electrical current using NodeMCU and sensors. Implemented threshold monitoring and automated relay control for electrical safety. Tested system performance under multiple electrical load conditions.",
-      "tech": ["C++", "IoT", "NodeMCU", "Current Sensor", "Relay Module"]
+      "name": "FinTrack — Personal Finance Dashboard",
+      "description": "Dashboard handling 500+ records with sub-100ms response time. Global state management with Zustand, interactive Recharts visualizations, and responsive dark/light mode UI.",
+      "tech": ["React", "TypeScript", "Zustand", "Recharts"]
     }
   ],
   "certifications": [
-    "APSSDC - Web Development using Django",
-    "edX - Introduction to HTML, CSS & JavaScript"
+    "HTML, CSS & JavaScript — IBM (edX)",
+    "Django Framework — APSSDC",
+    "Cloud Computing — NPTEL",
+    "Java Full Stack — Besant Technologies"
   ],
   "softSkills": [
-    "Analytical Thinking",
+    "Problem Solving",
     "Clear Communication",
     "Team Collaboration",
     "Adaptability"
   ],
-  "lastUpdated": "2025-01-01T00:00:00.000Z"
+  "lastUpdated": "2026-05-02T05:10:00.000Z"
 }
