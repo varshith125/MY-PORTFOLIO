@@ -4,24 +4,24 @@ import { useRef } from "react";
 
 const skillGroups = [
   {
-    label: "Languages",
+    label: "Core Languages",
     color: "cyan",
-    items: ["Python", "JavaScript", "Java", "C++"],
+    items: ["JavaScript", "TypeScript", "Java", "Python"],
   },
   {
-    label: "Web & Frameworks",
+    label: "Web & UI",
     color: "violet",
-    items: ["HTML", "CSS", "Bootstrap", "Django", "React"],
+    items: ["React.js", "HTML", "CSS", "Tailwind CSS"],
   },
   {
-    label: "Data & Tools",
+    label: "Backend & Databases",
     color: "lime",
-    items: ["MS Excel", "SQL", "Git", "GitHub", "VS Code"],
+    items: ["Django", "REST APIs", "JWT Auth", "MySQL", "MongoDB", "SQLite"],
   },
   {
-    label: "Core Skills",
+    label: "Tools & Platforms",
     color: "orange",
-    items: ["Problem Solving", "Team Collaboration"],
+    items: ["Git", "GitHub", "Vercel", "Render", "VS Code"],
   },
 ];
 
@@ -55,7 +55,7 @@ const colorMap = {
 const stats = [
   { value: "7.60", label: "CGPA" },
   { value: "2+", label: "Projects Built" },
-  { value: "5+", label: "Technologies" },
+  { value: "10+", label: "Technologies" },
   { value: "2026", label: "Graduating" },
 ];
 
@@ -157,8 +157,10 @@ export default function Skills() {
           <p className="section-label mb-4">certifications</p>
           <div className="flex flex-wrap gap-3">
             {[
-              "APSSDC – Web Development using Django",
-              "edX – Introduction to HTML, CSS & JavaScript",
+              "HTML, CSS & JavaScript — IBM (edX)",
+              "Django Framework — APSSDC",
+              "Cloud Computing — NPTEL",
+              "Java Full Stack — Besant Technologies",
             ].map((cert) => (
               <div
                 key={cert}
