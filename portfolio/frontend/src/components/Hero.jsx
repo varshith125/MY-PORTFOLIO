@@ -43,7 +43,7 @@ export default function Hero({ onLaunch3D }) {
               transition={{ duration: 0.65, delay: 0.12 }}
               className="modern-hero-subtitle"
             >
-              Frontend Developer
+              Fresher | Software Engineer
             </motion.h2>
 
             <motion.div
@@ -74,8 +74,8 @@ export default function Hero({ onLaunch3D }) {
               transition={{ delay: 0.35 }}
               className="modern-hero-copy"
             >
-              I build reliable web applications, developer-focused tools, and AI-powered
-              experiences with an emphasis on clarity, performance, and thoughtful product design.
+              A B.Tech IT fresher graduating in 2026, actively seeking entry-level Software Engineer
+              roles. I build React apps, REST APIs, and AI-powered experiences — ready to contribute from day one.
             </motion.p>
 
             <motion.div

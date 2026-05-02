@@ -31,9 +31,9 @@ export default function About() {
           >
             <div className="space-y-4 mb-8">
               {[
-                "I'm a final-year Information Technology student at ANITS, Visakhapatnam — a frontend-focused developer who loves building scalable, performant React applications.",
-                "My work spans AI-powered platforms, full-stack web apps, and blockchain-integrated systems. I bring strong JavaScript fundamentals and a product-minded approach to every project.",
-                "I'm passionate about performance optimization, clean code, and developer tooling — always looking for ways to make software faster, more reliable, and a pleasure to use.",
+                "I'm a final-year Information Technology student at ANITS, Visakhapatnam, graduating in 2026. As a fresher, I'm actively looking for entry-level Software Engineer roles where I can contribute and grow.",
+                "I've built real-world projects using React, Django, and Gemini API — including an AI Prompt Management Platform and a Personal Finance Dashboard. I completed a frontend internship at Bluphlux where I shipped 10+ components in a production React app.",
+                "I'm driven by clean code, fast UIs, and building things that actually work. Open to full-time roles, any location — ready to join a team and make an immediate impact.",
               ].map((text, i) => (
                 <motion.p
                   key={i}
