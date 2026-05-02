@@ -14,7 +14,7 @@ const projects = [
     image:
       "linear-gradient(135deg, rgba(59,130,246,0.42), rgba(99,102,241,0.15)), radial-gradient(circle at 20% 20%, rgba(255,255,255,0.32), transparent 35%), #0f172a",
     icon: Cpu,
-    github: "https://github.com/varshith125",
+    github: "https://github.com/varshith125/_ai-prompt-manager_",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
     image:
       "linear-gradient(135deg, rgba(14,165,233,0.38), rgba(30,41,59,0.2)), radial-gradient(circle at 78% 24%, rgba(255,255,255,0.24), transparent 28%), #0f172a",
     icon: BarChart2,
-    github: "https://github.com/varshith125",
+    github: "https://github.com/varshith125/finance-dashboard-ui",
   },
 ];
 
