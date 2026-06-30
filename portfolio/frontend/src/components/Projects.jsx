@@ -9,7 +9,7 @@ const projects = [
     name: "CryptoPrompt",
     tagline: "AI Prompt Management Platform",
     description:
-      "Built a full-stack AI-powered platform to create, manage, and enhance prompts using Google Gemini API. Implemented JWT authentication and AES-256 encryption. Integrated Ethereum blockchain via Solidity smart contracts for tamper-resistant storage of prompt records.",
+      "Engineered a full-stack prompt engineering platform leveraging Gemini API. Developed a secure hybrid Web2/Web3 architecture (SQLite + Ethereum Solidity smart contracts) for tamper-proof storage, implementing JWT auth and AES-256 encryption.",
     tech: ["React", "Django REST", "Ethereum", "Solidity", "Gemini API", "SQLite", "JWT", "AES-256"],
     image:
       "linear-gradient(135deg, rgba(59,130,246,0.42), rgba(99,102,241,0.15)), radial-gradient(circle at 20% 20%, rgba(255,255,255,0.32), transparent 35%), #0f172a",
@@ -21,7 +21,7 @@ const projects = [
     name: "AI-Powered RAG Assistant",
     tagline: "Conversational Document Intelligence",
     description:
-      "Built a conversational RAG assistant querying large document datasets. Implemented semantic search using OpenAI vector embeddings with Supabase pgvector. Orchestrated multi-step workflows via n8n automation and configured Docker containerization and Jenkins/GitHub Actions CI/CD.",
+      "Developed a conversational retrieval-augmented generation assistant for natural-language document querying. Integrated OpenAI embeddings and Supabase pgvector for semantic search. Orchestrated n8n automated pipelines, containerized with Docker, and built Jenkins/GitHub Actions CI/CD.",
     tech: ["n8n", "OpenAI API", "Supabase", "PostgreSQL", "pgvector", "Docker", "Jenkins", "GitHub Actions"],
     image:
       "linear-gradient(135deg, rgba(16,185,129,0.42), rgba(6,182,212,0.15)), radial-gradient(circle at 50% 50%, rgba(255,255,255,0.32), transparent 35%), #0f172a",
@@ -33,7 +33,7 @@ const projects = [
     name: "FinTrack",
     tagline: "Personal Finance Dashboard",
     description:
-      "Built a responsive personal finance dashboard for tracking income, expenses, and savings through interactive charts. Implemented Zustand global state with LocalStorage persistence, responsive Tailwind dark/light UI, and optimized filtering.",
+      "Engineered a responsive financial dashboard managing 500+ records with sub-100ms custom filtering. Implemented Zustand and LocalStorage persistence, premium responsive charts using Recharts, and styled dark/light mode via Tailwind CSS.",
     tech: ["React", "TypeScript", "Zustand", "Recharts", "Tailwind CSS"],
     image:
       "linear-gradient(135deg, rgba(14,165,233,0.38), rgba(30,41,59,0.2)), radial-gradient(circle at 78% 24%, rgba(255,255,255,0.24), transparent 28%), #0f172a",

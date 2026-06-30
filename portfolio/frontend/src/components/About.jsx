@@ -106,7 +106,7 @@ export default function About() {
                     Bluphlux
                   </p>
                   <p className="font-body text-xs text-[#4a4a6a] mt-2 leading-relaxed">
-                    Gained hands-on exposure to production React development. Built reusable components, refactored class-based views into functional ones, and applied state management hooks (useState, useEffect) in frontend projects.
+                    Contributed to production React applications by developing responsive, modular UI components. Refactored legacy class views to functional components with Hooks, improving state management. Designed reusable component systems to reduce code duplication and maintain UI consistency.
                   </p>
                 </div>
               </div>

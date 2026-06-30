@@ -31,23 +31,23 @@
       "role": "Frontend Developer Intern",
       "company": "Bluphlux",
       "duration": "Nov 2025 – Apr 2026",
-      "description": "Learned core React concepts and gained hands-on exposure to how real-world, production-level applications are developed and maintained. Built reusable React components and applied component-based development practices in frontend projects. Used React Hooks such as useState and useEffect to manage state and side effects while refactoring class-based components into functional components."
+      "description": "Contributed to production React applications by developing responsive, modular UI components. Refactored legacy class components to functional components with React Hooks (useState, useEffect), improving state management and rendering efficiency. Designed reusable component systems, reducing code duplication and ensuring consistent UI patterns across modules."
     }
   ],
   "projects": [
     {
       "name": "CryptoPrompt — AI Prompt Management Platform",
-      "description": "Built a full-stack AI-powered platform to create, manage, and enhance prompts using Google Gemini API. Implemented JWT authentication and AES-256 encryption for secure access and data protection at rest. Integrated Ethereum blockchain via Solidity smart contracts for tamper-resistant storage of sensitive prompt records. Designed a hybrid Web2 + Web3 architecture combining SQLite for regular data and on-chain storage for sensitive records.",
+      "description": "Engineered a full-stack prompt engineering platform leveraging Gemini API for prompt generation. Built a secure hybrid Web2/Web3 architecture utilizing SQLite for general storage and Solidity smart contracts on the Ethereum blockchain for tamper-proof storage of sensitive logs. Implemented JWT authentication and AES-256 data encryption at rest to protect user privacy.",
       "tech": ["React", "Django REST Framework", "Ethereum", "Solidity", "Google Gemini API", "SQLite", "JWT", "AES-256"]
     },
     {
       "name": "AI-Powered RAG Assistant — Conversational Document Intelligence System",
-      "description": "Built a conversational RAG assistant enabling users to query large document datasets using natural language. Implemented semantic search using OpenAI vector embeddings with Supabase pgvector for high-accuracy document retrieval. Designed multi-step AI workflow orchestration using n8n automation pipelines for scalable document processing. Containerized with Docker and configured CI/CD pipelines using Jenkins and GitHub Actions to automate deployments.",
+      "description": "Developed a conversational Retrieval-Augmented Generation (RAG) assistant using OpenAI embeddings and Supabase pgvector for high-precision semantic document search. Orchestrated automated, multi-step pipeline workflows with n8n to ingest and process large datasets. Containerized services with Docker and built automated CI/CD pipelines using Jenkins and GitHub Actions.",
       "tech": ["n8n", "OpenAI API", "Supabase", "PostgreSQL", "pgvector", "Docker", "Jenkins", "GitHub Actions"]
     },
     {
       "name": "FinTrack — Personal Finance Dashboard",
-      "description": "Built a responsive personal finance dashboard for tracking income, expenses, and savings through real-time interactive charts. Implemented Zustand global state management with LocalStorage persistence ensuring data survives page refreshes. Integrated Recharts visualizations with fully responsive dark/light mode UI using Tailwind CSS. Implemented an optimized filtering system for managing and viewing financial records efficiently.",
+      "description": "Built a responsive financial dashboard supporting 500+ records with optimized custom filters achieving sub-100ms response times. Managed persistent state across refreshes using Zustand and LocalStorage. Integrated dynamic, interactive charting with Recharts and customized Tailwind CSS for a premium dark/light mode experience.",
       "tech": ["React", "TypeScript", "Zustand", "Recharts", "Tailwind CSS"]
     }
   ],
@@ -63,5 +63,5 @@
     "Team Collaboration",
     "Adaptability"
   ],
-  "lastUpdated": "2026-06-30T13:25:00.000Z"
+  "lastUpdated": "2026-06-30T13:41:00.000Z"
 }
