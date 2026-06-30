@@ -4,24 +4,29 @@ import { useRef } from "react";
 
 const skillGroups = [
   {
-    label: "Core Languages",
+    label: "Languages",
     color: "cyan",
-    items: ["JavaScript", "TypeScript", "Java", "Python"],
+    items: ["Python", "JavaScript", "TypeScript", "Java", "C"],
   },
   {
-    label: "Web & UI",
+    label: "Frontend & UI",
     color: "violet",
-    items: ["React.js", "HTML", "CSS", "Tailwind CSS"],
+    items: ["React.js", "HTML5", "CSS3", "Tailwind CSS", "Zustand", "Recharts"],
   },
   {
     label: "Backend & Databases",
     color: "lime",
-    items: ["Django", "REST APIs", "JWT Auth", "MySQL", "MongoDB", "SQLite"],
+    items: ["Django", "REST APIs", "JWT Authentication", "MySQL", "MongoDB", "SQLite", "PostgreSQL", "pgvector", "Supabase"],
   },
   {
-    label: "Tools & Platforms",
+    label: "Cloud, DevOps & Tools",
     color: "orange",
-    items: ["Git", "GitHub", "Vercel", "Render", "VS Code"],
+    items: ["AWS", "Vercel", "Render", "Docker", "Jenkins", "CI/CD Pipelines", "Git", "GitHub", "VS Code"],
+  },
+  {
+    label: "Web3 & Security",
+    color: "cyan",
+    items: ["AES-256 Encryption", "Solidity", "Ethereum", "web3.py", "Web Architecture"],
   },
 ];
 
@@ -54,8 +59,8 @@ const colorMap = {
 
 const stats = [
   { value: "7.60", label: "CGPA" },
-  { value: "2+", label: "Projects Built" },
-  { value: "10+", label: "Technologies" },
+  { value: "3", label: "Projects Built" },
+  { value: "15+", label: "Technologies" },
   { value: "2026", label: "Graduating" },
 ];
 

@@ -31,9 +31,9 @@ export default function About() {
           >
             <div className="space-y-4 mb-8">
               {[
-                "I'm a final-year Information Technology student at ANITS, Visakhapatnam, graduating in 2026. As a fresher, I'm actively looking for entry-level Software Engineer roles where I can contribute and grow.",
-                "I've built real-world projects using React, Django, and Gemini API — including an AI Prompt Management Platform and a Personal Finance Dashboard. I completed a frontend internship at Bluphlux where I shipped 10+ components in a production React app.",
-                "I'm driven by clean code, fast UIs, and building things that actually work. Open to full-time roles, any location — ready to join a team and make an immediate impact.",
+                "I'm a B.Tech Information Technology graduate from ANITS, Visakhapatnam, graduating in 2026. As a fresher, I'm actively seeking entry-level Software Engineer roles to contribute to scalable software development.",
+                "I have hands-on experience in React.js, TypeScript, Python, Django REST Framework, PostgreSQL, and REST API development through internships and project work. I've built full-stack web applications, AI-powered solutions like an AI RAG Assistant and CryptoPrompt, and modern dashboards.",
+                "I am driven by clean code, automation, and building things that actually work. I completed a frontend developer internship at Bluphlux and am ready to join a team to make an immediate impact.",
               ].map((text, i) => (
                 <motion.p
                   key={i}
@@ -106,7 +106,7 @@ export default function About() {
                     Bluphlux
                   </p>
                   <p className="font-body text-xs text-[#4a4a6a] mt-2 leading-relaxed">
-                    Built 10+ responsive React components. Reduced code duplication by 25% with reusable patterns. Integrated REST APIs for real-time data rendering.
+                    Gained hands-on exposure to production React development. Built reusable components, refactored class-based views into functional ones, and applied state management hooks (useState, useEffect) in frontend projects.
                   </p>
                 </div>
               </div>

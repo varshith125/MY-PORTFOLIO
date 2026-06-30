@@ -1,6 +1,6 @@
 {
   "name": "Gummadi Venkata Varshith",
-  "title": "Frontend Developer",
+  "title": "Software Engineer",
   "contact": {
     "phone": "+91-7993170792",
     "email": "varshith6066@gmail.com",
@@ -8,7 +8,7 @@
     "linkedin": "https://linkedin.com/in/venkata-varshith",
     "github": "https://github.com/varshith125"
   },
-  "summary": "B.Tech Information Technology fresher graduating in 2026, actively seeking entry-level Software Engineer roles. Hands-on experience building React applications, REST APIs, and AI-powered platforms. Completed a frontend internship at Bluphlux. Strong in JavaScript, TypeScript, and performance optimization — ready to contribute from day one.",
+  "summary": "B.Tech Information Technology graduate with hands-on experience in React.js, TypeScript, Python, Django REST Framework, PostgreSQL, and REST API development through internship and project work. Built full-stack web applications, AI-powered solutions, and modern user interfaces using industry-relevant technologies. Seeking an entry-level Software Engineer role to contribute to scalable software development while continuously learning and growing.",
   "education": [
     {
       "degree": "B.Tech — Information Technology",
@@ -19,31 +19,36 @@
     }
   ],
   "skills": {
-    "programmingLanguages": ["JavaScript", "TypeScript", "Java", "Python"],
-    "web": ["React.js", "HTML", "CSS", "Tailwind CSS"],
-    "frameworks": ["Django", "REST APIs", "JWT Authentication", "Zustand", "Recharts"],
-    "tools": ["Git", "GitHub", "Vercel", "Render", "VS Code"],
-    "dataTools": ["MySQL", "MongoDB", "SQLite"],
-    "coreSkills": ["Problem Solving", "Performance Optimization", "Data Structures"]
+    "programmingLanguages": ["Python", "JavaScript", "TypeScript", "Java", "C"],
+    "web": ["React.js", "HTML5", "CSS3", "Tailwind CSS", "Zustand", "Recharts"],
+    "frameworks": ["Django", "REST APIs", "JWT Authentication"],
+    "tools": ["Git", "GitHub", "VS Code"],
+    "dataTools": ["MySQL", "MongoDB", "SQLite", "PostgreSQL", "pgvector"],
+    "coreSkills": ["AWS", "Vercel", "Render", "Docker", "Jenkins", "CI/CD Pipelines", "Solidity", "Ethereum", "web3.py", "AES-256 Encryption", "Web Architecture"]
   },
   "experience": [
     {
       "role": "Frontend Developer Intern",
       "company": "Bluphlux",
       "duration": "Nov 2025 – Apr 2026",
-      "description": "Developed 10+ responsive React components, improving UI consistency across 5+ application modules. Implemented dynamic features using hooks, enhancing state management and reducing re-render issues. Designed reusable components, reducing code duplication by 25%. Integrated REST APIs to render real-time data, improving application responsiveness."
+      "description": "Learned core React concepts and gained hands-on exposure to how real-world, production-level applications are developed and maintained. Built reusable React components and applied component-based development practices in frontend projects. Used React Hooks such as useState and useEffect to manage state and side effects while refactoring class-based components into functional components."
     }
   ],
   "projects": [
     {
       "name": "CryptoPrompt — AI Prompt Management Platform",
-      "description": "Full-stack AI platform using Gemini API for prompt generation. Hybrid Web2 + Web3 architecture with AES-256 encryption and JWT authentication. Deployed on Vercel and Render.",
-      "tech": ["React", "Django REST", "Ethereum", "Gemini API", "Solidity", "web3.py"]
+      "description": "Built a full-stack AI-powered platform to create, manage, and enhance prompts using Google Gemini API. Implemented JWT authentication and AES-256 encryption for secure access and data protection at rest. Integrated Ethereum blockchain via Solidity smart contracts for tamper-resistant storage of sensitive prompt records. Designed a hybrid Web2 + Web3 architecture combining SQLite for regular data and on-chain storage for sensitive records.",
+      "tech": ["React", "Django REST Framework", "Ethereum", "Solidity", "Google Gemini API", "SQLite", "JWT", "AES-256"]
+    },
+    {
+      "name": "AI-Powered RAG Assistant — Conversational Document Intelligence System",
+      "description": "Built a conversational RAG assistant enabling users to query large document datasets using natural language. Implemented semantic search using OpenAI vector embeddings with Supabase pgvector for high-accuracy document retrieval. Designed multi-step AI workflow orchestration using n8n automation pipelines for scalable document processing. Containerized with Docker and configured CI/CD pipelines using Jenkins and GitHub Actions to automate deployments.",
+      "tech": ["n8n", "OpenAI API", "Supabase", "PostgreSQL", "pgvector", "Docker", "Jenkins", "GitHub Actions"]
     },
     {
       "name": "FinTrack — Personal Finance Dashboard",
-      "description": "Dashboard handling 500+ records with sub-100ms response time. Global state management with Zustand, interactive Recharts visualizations, and responsive dark/light mode UI.",
-      "tech": ["React", "TypeScript", "Zustand", "Recharts"]
+      "description": "Built a responsive personal finance dashboard for tracking income, expenses, and savings through real-time interactive charts. Implemented Zustand global state management with LocalStorage persistence ensuring data survives page refreshes. Integrated Recharts visualizations with fully responsive dark/light mode UI using Tailwind CSS. Implemented an optimized filtering system for managing and viewing financial records efficiently.",
+      "tech": ["React", "TypeScript", "Zustand", "Recharts", "Tailwind CSS"]
     }
   ],
   "certifications": [
@@ -58,5 +63,5 @@
     "Team Collaboration",
     "Adaptability"
   ],
-  "lastUpdated": "2026-05-02T05:10:00.000Z"
+  "lastUpdated": "2026-06-30T13:25:00.000Z"
 }

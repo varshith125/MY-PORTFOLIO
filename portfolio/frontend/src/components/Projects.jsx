@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ArrowUpRight, Cpu, BarChart2 } from "lucide-react";
+import { ArrowUpRight, Cpu, BarChart2, Bot } from "lucide-react";
 import { analyticsAPI } from "../utils/api";
 
 const projects = [
@@ -9,8 +9,8 @@ const projects = [
     name: "CryptoPrompt",
     tagline: "AI Prompt Management Platform",
     description:
-      "Full-stack AI platform using Gemini API to enhance prompt generation and user workflows. Hybrid Web2 + Web3 architecture (SQLite + Ethereum) with AES-256 encryption and JWT authentication.",
-    tech: ["React", "Django REST", "Ethereum", "Gemini API", "Solidity", "web3.py"],
+      "Built a full-stack AI-powered platform to create, manage, and enhance prompts using Google Gemini API. Implemented JWT authentication and AES-256 encryption. Integrated Ethereum blockchain via Solidity smart contracts for tamper-resistant storage of prompt records.",
+    tech: ["React", "Django REST", "Ethereum", "Solidity", "Gemini API", "SQLite", "JWT", "AES-256"],
     image:
       "linear-gradient(135deg, rgba(59,130,246,0.42), rgba(99,102,241,0.15)), radial-gradient(circle at 20% 20%, rgba(255,255,255,0.32), transparent 35%), #0f172a",
     icon: Cpu,
@@ -18,11 +18,23 @@ const projects = [
   },
   {
     id: 2,
+    name: "AI-Powered RAG Assistant",
+    tagline: "Conversational Document Intelligence",
+    description:
+      "Built a conversational RAG assistant querying large document datasets. Implemented semantic search using OpenAI vector embeddings with Supabase pgvector. Orchestrated multi-step workflows via n8n automation and configured Docker containerization and Jenkins/GitHub Actions CI/CD.",
+    tech: ["n8n", "OpenAI API", "Supabase", "PostgreSQL", "pgvector", "Docker", "Jenkins", "GitHub Actions"],
+    image:
+      "linear-gradient(135deg, rgba(16,185,129,0.42), rgba(6,182,212,0.15)), radial-gradient(circle at 50% 50%, rgba(255,255,255,0.32), transparent 35%), #0f172a",
+    icon: Bot,
+    github: "https://github.com/varshith125/ai-rag-assistant",
+  },
+  {
+    id: 3,
     name: "FinTrack",
     tagline: "Personal Finance Dashboard",
     description:
-      "Dashboard handling 500+ records with optimized filtering achieving sub-100ms response time. Global state management with Zustand, interactive Recharts visualizations, and responsive dark/light mode.",
-    tech: ["React", "TypeScript", "Zustand", "Recharts"],
+      "Built a responsive personal finance dashboard for tracking income, expenses, and savings through interactive charts. Implemented Zustand global state with LocalStorage persistence, responsive Tailwind dark/light UI, and optimized filtering.",
+    tech: ["React", "TypeScript", "Zustand", "Recharts", "Tailwind CSS"],
     image:
       "linear-gradient(135deg, rgba(14,165,233,0.38), rgba(30,41,59,0.2)), radial-gradient(circle at 78% 24%, rgba(255,255,255,0.24), transparent 28%), #0f172a",
     icon: BarChart2,
