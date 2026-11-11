@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { skillGroups } from "../data/profile.js";
 
 const tabs = [{ id: "all", label: "Everything" }, ...skillGroups.map((g) => ({ id: g.id, label: g.label }))];
@@ -29,18 +29,20 @@ export default function Skills() {
         </div>
 
         <ul className="skills__list">
-          {all.filter((s) => tab === "all" || tab === s.group).map((s, i) => {
-            return (
+          <AnimatePresence mode="popLayout" initial={false}>
+            {all.filter((s) => tab === "all" || tab === s.group).map((s, i) => (
               <motion.li
                 key={s.name}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ type: "spring", stiffness: 260, damping: 24, delay: Math.min(i * 0.012, 0.12) }}
+                layout
+                initial={{ opacity: 0, scale: 0.94 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.94, transition: { duration: 0.15 } }}
+                transition={{ type: "spring", stiffness: 380, damping: 32, delay: Math.min(i * 0.012, 0.12) }}
               >
                 {s.name}
               </motion.li>
-            );
-          })}
+            ))}
+          </AnimatePresence>
         </ul>
       </div>
     </section>

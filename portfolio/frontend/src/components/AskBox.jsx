@@ -8,6 +8,7 @@ export default function AskBox() {
   const [value, setValue] = useState("");
   const [busy, setBusy] = useState(false);
   const log = useRef(null);
+  const nextId = useRef(0);
   const reducedMotion = useReducedMotion();
 
   useEffect(() => {
@@ -18,13 +19,13 @@ export default function AskBox() {
     const question = text.trim();
     if (!question || busy) return;
     setValue("");
-    setMessages((m) => [...m.slice(-38), { from: "you", text: question }]);
+    setMessages((m) => [...m.slice(-38), { id: nextId.current++, from: "you", text: question }]);
     setBusy(true);
     try {
       const answer = await ask(question);
-      setMessages((m) => [...m, { from: "site", ...answer }]);
+      setMessages((m) => [...m, { id: nextId.current++, from: "site", ...answer }]);
     } catch {
-      setMessages((m) => [...m, { from: "site", text: "Please try again, or use the contact links below." }]);
+      setMessages((m) => [...m, { id: nextId.current++, from: "site", text: "Please try again, or use the contact links below." }]);
     } finally { setBusy(false); }
   }
 
@@ -43,9 +44,9 @@ export default function AskBox() {
             animate={{ height: "auto", opacity: 1 }}
             transition={{ type: "spring", stiffness: 200, damping: 26 }}
           >
-            {messages.map((m, i) => (
+            {messages.map((m) => (
               <motion.p
-                key={i}
+                key={m.id}
                 className={`ask__msg ask__msg--${m.from}`}
                 initial={{ opacity: 0, y: 12, scale: 0.97 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}

@@ -1,16 +1,19 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Magnetic from "./Magnetic.jsx";
 import { profile } from "../data/profile.js";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
+  const timer = useRef(null);
+  useEffect(() => () => clearTimeout(timer.current), []);
 
   async function copy() {
     try {
       await navigator.clipboard.writeText(profile.email);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2200);
+      clearTimeout(timer.current);
+      timer.current = setTimeout(() => setCopied(false), 2200);
     } catch {
       window.location.href = `mailto:${profile.email}`;
     }
