@@ -3,7 +3,7 @@ const profileData = {
   role: "Full-stack and AI developer",
   intro: "I'm an IT graduate from Visakhapatnam. I build web apps with React and Python, and AI pipelines that answer questions from real documents.",
   location: "Visakhapatnam, India",
-  relocation: "Open to relocating to Hyderabad",
+  relocation: "Open to relocating",
   email: "varshith6066@gmail.com",
   links: {
     linkedin: "https://www.linkedin.com/in/venkata-varshith-82b2542a5",

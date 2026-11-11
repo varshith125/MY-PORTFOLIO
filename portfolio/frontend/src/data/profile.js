@@ -2,7 +2,7 @@ export const profile = {
  name: "Varshith", fullName: "Gummadi Venkata Varshith", nameLines: ["Gummadi Venkata", "Varshith"],
  role: "Entry-level Software Engineer",
  intro: "I'm Gummadi Venkata Varshith, a 2026 IT graduate. I build web applications with React and Python, connect them through REST APIs, and explore practical applications of AI.",
- location: "Visakhapatnam, India", relocation: "Open to relocating to Hyderabad", email: "varshith6066@gmail.com",
+ location: "Visakhapatnam, India", relocation: "Open to relocating", email: "varshith6066@gmail.com",
  links: { linkedin: "https://www.linkedin.com/in/venkata-varshith-82b2542a5", github: "https://github.com/varshith125" }
 };
 export const projects = [

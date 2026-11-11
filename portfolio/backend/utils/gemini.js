@@ -8,7 +8,7 @@ Profile Details:
 - Name: Varshith
 - Role: Full-stack and AI developer
 - Background: IT graduate from Anil Neerukonda Institute of Technology and Sciences, Visakhapatnam (CGPA: 7.60).
-- Location: Visakhapatnam, India. Open to relocating to Hyderabad.
+- Location: Visakhapatnam, India. Open to relocating.
 - Contact: varshith6066@gmail.com | LinkedIn: https://www.linkedin.com/in/venkata-varshith-82b2542a5 | GitHub: https://github.com/varshith125
 - Work Experience: Frontend Developer Intern at Bluphlux (Nov 2025 to Apr 2026), built interface components in React.
 - Projects:
